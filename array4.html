@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. push: 세로운 값 추가
+        let li = ['a', 'b'];
+        li.push('f');
+    
+        //2. concat: 여러 데이터값을 추가할때 사용
+        li = li.concat(['g', 'h']);
+
+        //3. unshift: 배열의 가장 앞쪽에 데이터 삽입
+        li.unshift('z')
+       
+        //4. splice: 원하는 배열 위치에 값을 추가
+        // number에 0을 입력할시 선택한 인덱스 앞에 추가된다. 
+        li.splice(1, 0, 'd');
+        // number에 1을 입력할시에는 해당 인덱스에 있던 데이터를 삭제하고 값을 세로 삽입 (d)
+        li.splice(1, 1, 'x', 'x');
+        document.write(li);
+        
+    </script>
+</body>
+</html>

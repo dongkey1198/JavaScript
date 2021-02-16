@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기</title>
+</head>
+<body>
+    
+    <section>
+        <h1>더하기 계산기</h1>
+        <div>
+            <input id="txt-x" type="text" value="0" dir="rt1"/>
+            +
+            <input id="txt-y" type="text" value="0" dir="rt1"/>
+            <input id="btn-add" type="button" value="="/>
+            <input id="text-sum" type="text" value="0" readonly dir="rt1"/>
+        </div>
+    </section>
+
+    <section id="section2">
+        <hr>
+        <h1>더하기 테그이름 사용하기</h1>
+        <div>
+            <input type="text" value="0" dir="rt1"/>
+            +
+            <input type="text" value="0" dir="rt1"/>
+            <input type="button" value="="/>
+            <input type="text" value="0" readonly dir="rt1"/>
+        </div>
+    </section>
+
+    <hr>
+    <section id="section3">
+        <hr>
+        <h1>더하기 클레스이름 사용하기</h1>
+        <div>
+            <input class="x" type="text" value="0" dir="rt1"/>
+            +
+            <input class="y" type="text" value="0" dir="rt1"/>
+            <input class="add" type="button" value="="/>
+            <input class="result" type="text" value="0" readonly dir="rt1"/>
+        </div>
+    </section>
+
+    
+    <hr>
+    <section id="section4">
+        <hr>
+        <h1>Selectors API Level1 </h1>
+        <div>
+            <input class="x" type="text" value="0" dir="rt1"/>
+            +
+            <input class="y" type="text" value="0" dir="rt1"/>
+            <input class="add" type="button" value="="/>
+            <input class="result" type="text" value="0" readonly dir="rt1"/>
+        </div>
+    </section>
+
+    <hr>
+    <section id="section5">
+        <hr>
+        <h1>Child Nodes를 이용한 노드 선택</h1>
+        <div class="box">
+            <input />
+            <input/>
+        </div>
+    </section>
+
+    <hr>
+    <section id="section6">
+        <h1>엘리먼트 노드의 속성 변경</h1>
+        <div >
+            <input class="src-input" type="text">
+            <select class="image-select">
+                <option value="a.jpg">img1</option>
+                <option value="b.jpg">img2</option>
+                <option value="c.jpg">img3</option>
+            </select>
+            <input type="color" class="color-input"/>
+            <input class="change-button" type="button" value="변경하기">
+        </div><br>
+        <div>
+            <img class="image" src="./image/a.jpg" style="border: 3px solid red;" alt="">
+        </div>
+    </section>
+
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>
